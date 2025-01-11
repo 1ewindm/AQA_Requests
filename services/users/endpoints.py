@@ -6,4 +6,5 @@ HOST = "https://dev-gs.qa-playground.com/api/v1" #if os.environ ["STAGE"] == "qa
 class Endpoint:
 
     create_user = f"{HOST}/users"
-    get_user_by_id = lambda self, uuid: f"{HOST}/users{uuid}"
+    get_all_users = f"{HOST}/users"
+    get_user_by_id = lambda self, uuid: f"{HOST}/users/{uuid}"

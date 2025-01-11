@@ -15,5 +15,4 @@ def init_enviroment():
         headers={"Authorization": f"Bearer {os.getenv('API_TOKEN')}"}
 
     )
-    taskID = os.getenv('X_TASK_ID')
     assert response.status_code == 205
